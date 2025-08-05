@@ -8,3 +8,26 @@
 .logo {
     height: 40px;
 }
+
+.status {
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.875rem;
+}
+
+.status-available {
+    background-color: #1B8754;
+}
+
+.status-prestito {
+    background-color: #FFC107;
+}
+
+.status-unavailable {
+    background-color: #DC3545;
+}
+
+.text-color {
+    color: white;
+}
