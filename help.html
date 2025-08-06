@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="asset/css/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="img/duck.png" alt="Logo" class="logo" />
+                    <span class="ms-2">Catalogo Libri</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                    aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ms-2">
+                        <li class="nav-item"><a class="nav-link" href="utenti.html">Anagrafica Utenti</a></li>
+                        <li class="nav-item"><a class="nav-link" href="storico.html">Storico Prestiti</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container mt-5">
+            <h2 class="mb-4">Centro Assistenza</h2>
+
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq1">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                            Come posso aggiungere un nuovo libro al catalogo?
+                        </button>
+                    </h2>
+                    <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Per aggiungere un libro, clicca su "Aggiungi Libro" nella pagina principale o vai su <a
+                                href="form.html">questa pagina</a>. Compila tutti i campi richiesti e premi il pulsante
+                            "Aggiungi Libro".
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                            Posso modificare o eliminare un utente?
+                        </button>
+                    </h2>
+                    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Sì, nella sezione "Anagrafica Utenti", utilizza le icone <i class="fas fa-pen"></i> per
+                            modificare o <i class="fas fa-trash"></i> per eliminare un utente.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                            Come posso sapere se un libro è disponibile?
+                        </button>
+                    </h2>
+                    <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Nella pagina principale del catalogo, ogni libro ha un&aposetichetta che indica se è
+                            <strong class="status status-available text-color">Disponibile</strong>, <strong
+                                class="status status-prestito text-color">In
+                                prestito</strong> o
+                            <strong class="status status-unavailable text-color">Non
+                                disponibile</strong>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-5">
+                <h4>Hai ancora bisogno di aiuto?</h4>
+                <p>Contattaci all&apos;ndirizzo <a href="mailto:supporto@catalogolibri.it">supporto@catalogolibri.it</a>
+                    oppure chiama il numero <strong>+39 055 1234567</strong>.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

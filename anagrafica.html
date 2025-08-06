@@ -2,23 +2,22 @@
 <html lang="it">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap dashboard</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="asset/css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anagrafica Utenti</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="asset/css/style.css" />
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand d-flex align-items-center" href="#">
-                    <img src="img/duck.png" alt="Logo" class="logo">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="img/duck.png" alt="Logo" class="logo" />
                     <span class="ms-2">Catalogo Libri</span>
                 </a>
-
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
                     aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -26,38 +25,39 @@
 
                 <div class="collapse navbar-collapse" id="navbarMenu">
                     <ul class="navbar-nav ms-2">
-                        <li class="nav-item"><a class="nav-link" href="anagrafica.html">Anagrafica Utenti</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="utenti.html">Anagrafica Utenti</a></li>
                         <li class="nav-item"><a class="nav-link" href="storico.html">Storico Prestiti</a></li>
                         <li class="nav-item"><a class="nav-link" href="help.html">Help</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-
     </header>
+
     <main>
         <div class="container mt-5">
             <div class="d-flex justify-content-between align-items-center mb-4">
-                <h2>Catalogo Libri</h2>
-                <a href="form.html" class="btn btn-primary">Aggiungi Libro</a>
+                <h2>Anagrafica Utenti</h2>
+                <a href="#" class="btn btn-primary">Aggiungi Utente</a>
             </div>
-
 
             <div class="table-responsive">
                 <table class="table table-hover align-middle">
-                    <thead>
+                    <thead class="table-dark">
                         <tr>
-                            <th>Titolo</th>
-                            <th class="d-none d-md-table-cell">Data prestito</th>
-                            <th>Stato</th>
+                            <th>Nome</th>
+                            <th>Cognome</th>
+                            <th>Email</th>
+                            <th>N. Tessera</th>
                             <th>Azioni</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="table-light">
-                            <td>I pilastri della terra</td>
-                            <td class="d-none d-md-table-cell">-</td>
-                            <td><span class="status status-available text-color">Disponibile</span></td>
+                        <tr>
+                            <td>Mario</td>
+                            <td>Rossi</td>
+                            <td>mario.rossi@gmail.com</td>
+                            <td>01945</td>
                             <td>
                                 <button class="btn btn-sm btn-outline-secondary me-2"><i
                                         class="fas fa-pen"></i></button>
@@ -65,19 +65,10 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>I promessi sposi</td>
-                            <td class="d-none d-md-table-cell">-</td>
-                            <td><span class="status status-available text-color">Disponibile</span></td>
-                            <td>
-                                <button class="btn btn-sm btn-outline-secondary me-2"><i
-                                        class="fas fa-pen"></i></button>
-                                <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-trash"></i></button>
-                            </td>
-                        </tr>
-                        <tr class="table-light">
-                            <td>Il signore degli anelli</td>
-                            <td class="d-none d-md-table-cell">18/10/2023</td>
-                            <td><span class="status status-prestito text-color">In prestito</span></td>
+                            <td>Giulia</td>
+                            <td>Rossi</td>
+                            <td>giulia.rossi@mail.com</td>
+                            <td>09231</td>
                             <td>
                                 <button class="btn btn-sm btn-outline-secondary me-2"><i
                                         class="fas fa-pen"></i></button>
@@ -85,19 +76,10 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Harry Potter e la pietra filosofale</td>
-                            <td class="d-none d-md-table-cell">-</td>
-                            <td><span class="status status-available text-color">Disponibile</span></td>
-                            <td>
-                                <button class="btn btn-sm btn-outline-secondary me-2"><i
-                                        class="fas fa-pen"></i></button>
-                                <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-trash"></i></button>
-                            </td>
-                        </tr>
-                        <tr class="table-light">
-                            <td>Il codice Da Vinci</td>
-                            <td class="d-none d-md-table-cell">-</td>
-                            <td><span class="status status-unavailable text-color">Non Disponibile</span></td>
+                            <td>Marco</td>
+                            <td>Bianchi</td>
+                            <td>marco.bianchi@email.it</td>
+                            <td>15482</td>
                             <td>
                                 <button class="btn btn-sm btn-outline-secondary me-2"><i
                                         class="fas fa-pen"></i></button>
@@ -105,19 +87,10 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Shining</td>
-                            <td class="d-none d-md-table-cell">-</td>
-                            <td><span class="status status-available text-color">Disponibile</span></td>
-                            <td>
-                                <button class="btn btn-sm btn-outline-secondary me-2"><i
-                                        class="fas fa-pen"></i></button>
-                                <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-trash"></i></button>
-                            </td>
-                        </tr>
-                        <tr class="table-light">
-                            <td>La divina commedia</td>
-                            <td class="d-none d-md-table-cell">21/09/2023</td>
-                            <td><span class="status status-prestito text-color">In prestito</span></td>
+                            <td>Sara</td>
+                            <td>Neri</td>
+                            <td>sara.neri@posta.com</td>
+                            <td>78012</td>
                             <td>
                                 <button class="btn btn-sm btn-outline-secondary me-2"><i
                                         class="fas fa-pen"></i></button>
@@ -125,19 +98,10 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Il trono di spade</td>
-                            <td class="d-none d-md-table-cell">-</td>
-                            <td><span class="status status-available text-color">Disponibile</span></td>
-                            <td>
-                                <button class="btn btn-sm btn-outline-secondary me-2"><i
-                                        class="fas fa-pen"></i></button>
-                                <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-trash"></i></button>
-                            </td>
-                        </tr>
-                        <tr class="table-light">
-                            <td>Il mondo di sofia</td>
-                            <td class="d-none d-md-table-cell">-</td>
-                            <td><span class="status status-unavailable text-color">Non Disponibile</span></td>
+                            <td>Luca</td>
+                            <td>Romano</td>
+                            <td>luca.romano@gmail.com</td>
+                            <td>30817</td>
                             <td>
                                 <button class="btn btn-sm btn-outline-secondary me-2"><i
                                         class="fas fa-pen"></i></button>
@@ -145,19 +109,10 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Le cronache di Narnia: il leone, la strega e l&apos;armadio</td>
-                            <td class="d-none d-md-table-cell">25/07/2023</td>
-                            <td><span class="status status-prestito text-color">In prestito</span></td>
-                            <td>
-                                <button class="btn btn-sm btn-outline-secondary me-2"><i
-                                        class="fas fa-pen"></i></button>
-                                <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-trash"></i></button>
-                            </td>
-                        </tr>
-                        <tr class="table-light">
-                            <td>Il piccolo principe</td>
-                            <td class="d-none d-md-table-cell">-</td>
-                            <td><span class="status status-available text-color">Disponibile</span></td>
+                            <td>Francesca</td>
+                            <td>Ferrari</td>
+                            <td>francesca.ferrari@yahoo.it</td>
+                            <td>99001</td>
                             <td>
                                 <button class="btn btn-sm btn-outline-secondary me-2"><i
                                         class="fas fa-pen"></i></button>
@@ -165,20 +120,111 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>La storia infinita</td>
-                            <td class="d-none d-md-table-cell">-</td>
-                            <td><span class="status status-available text-color">Disponibile</span></td>
+                            <td>Giorgio</td>
+                            <td>Conti</td>
+                            <td>giorgio.conti@mail.com</td>
+                            <td>47215</td>
                             <td>
                                 <button class="btn btn-sm btn-outline-secondary me-2"><i
                                         class="fas fa-pen"></i></button>
                                 <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-trash"></i></button>
                             </td>
                         </tr>
+                        <tr>
+                            <td>Anna</td>
+                            <td>Marini</td>
+                            <td>anna.marini@gmail.com</td>
+                            <td>22389</td>
+                            <td>
+                                <button class="btn btn-sm btn-outline-secondary me-2"><i
+                                        class="fas fa-pen"></i></button>
+                                <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Davide</td>
+                            <td>Barbieri</td>
+                            <td>davide.barbieri@libero.it</td>
+                            <td>62173</td>
+                            <td>
+                                <button class="btn btn-sm btn-outline-secondary me-2"><i
+                                        class="fas fa-pen"></i></button>
+                                <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Elena</td>
+                            <td>Fontana</td>
+                            <td>elena.fontana@gmail.com</td>
+                            <td>15860</td>
+                            <td>
+                                <button class="btn btn-sm btn-outline-secondary me-2"><i
+                                        class="fas fa-pen"></i></button>
+                                <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Simone</td>
+                            <td>De Luca</td>
+                            <td>simone.deluca@email.com</td>
+                            <td>37014</td>
+                            <td>
+                                <button class="btn btn-sm btn-outline-secondary me-2"><i
+                                        class="fas fa-pen"></i></button>
+                                <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Chiara</td>
+                            <td>Colombo</td>
+                            <td>chiara.colombo@mail.com</td>
+                            <td>80452</td>
+                            <td>
+                                <button class="btn btn-sm btn-outline-secondary me-2"><i
+                                        class="fas fa-pen"></i></button>
+                                <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Matteo</td>
+                            <td>Galli</td>
+                            <td>matteo.galli@gmail.com</td>
+                            <td>14112</td>
+                            <td>
+                                <button class="btn btn-sm btn-outline-secondary me-2"><i
+                                        class="fas fa-pen"></i></button>
+                                <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Valentina</td>
+                            <td>Pellegrini</td>
+                            <td>valentina.pellegrini@virgilio.it</td>
+                            <td>69025</td>
+                            <td>
+                                <button class="btn btn-sm btn-outline-secondary me-2"><i
+                                        class="fas fa-pen"></i></button>
+                                <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nicola</td>
+                            <td>Leoni</td>
+                            <td>nicola.leoni@email.it</td>
+                            <td>31567</td>
+                            <td>
+                                <button class="btn btn-sm btn-outline-secondary me-2"><i
+                                        class="fas fa-pen"></i></button>
+                                <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+
                     </tbody>
                 </table>
             </div>
         </div>
     </main>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
